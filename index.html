@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlad's cool page</title>
+    <link rel="stylesheet" href="style.css">
+        
+  
+</head>
+<body>
+
+    <div class="main-container">
+        <div id= "gb" class="green-box">
+            <p> <h1>Hello and welcome! This is a webpage to showcase my HTML skills.</h1> </p>
+            <div class="profile-container">
+    
+    <div class="skills">
+        <h2>My skills:</h2>
+        <ul>
+                <li>SPSS</li>
+                <li>HTML😍</li>
+                <li>Bartending</li>
+                </ul>
+    </div>
+</div>
+        </div>
+
+         <img id="selfie" src="IMG_7551.png" alt="Vlad's slefie">
+        <h1> Here are some facts about me! </h1>
+        <div class="green-box">
+            <h2> 23 y.o. 💪  </h2>
+             <h2> <a href="https://www.archdaily.com/907694/moscow-launches-new-smart-city-district-as-a-living-lab" target="_blank"> Born in Moscow</a>🪆</h2>
+        <h2>  <a href="IMG_7397.png" target ="_blank" > Have a younger brother 👦🏻</a> </h2>
+        </div> 
+
+<p>Follow me online!</p>
+        <button class="button">
+            <img src="strava_qr_code.png" alt="Strava QR Code"> <a href=" https://www.strava.com/athletes/125554849" target="_blank">Strava</a>
+        </button>
+        <button class="button">
+            <img src="LinkedIn_QR_Code_BW.png" alt="LinkedIn QR Code"> <a href=" https://www.linkedin.com/in/vladislav-vaevskiy-726988195/" target="_blank">Linkedin </a>
+        </button>
+
+        <div class="quote">
+            “Resilience is not about how you endure. It's about how you recharge”
+        </div>
+    </div>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>Welcome to Vlad's Cool Page!</h2>
+        <p>This is a simple popup to catch your attention!</p>
+    </div>
+</div>
+<script>
+   
+    window.onload = function() {
+        document.getElementById("popup").style.display = "flex";
+    };
+
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+</script>
+
+<script>
+    function showPopupWithDelay() {
+        setTimeout(function() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "flex";
+            popup.style.opacity = 5; 
+        }, 3000); 
+    }
+
+    // Function to close the popup
+    function closePopup() {
+        var popup = document.getElementById("popup");
+        popup.style.display = "none";
+    }
+
+    
+    window.onload = showPopupWithDelay; 
+</script>
+
+
+
+</body>
+</html>
